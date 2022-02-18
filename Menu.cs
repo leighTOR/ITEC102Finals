@@ -142,9 +142,10 @@ namespace ITEC102Finals_SurveyConsoleApp
         {
             // getting the average of all the answers
             double avg = Queryable.Average(answers.AsQueryable());
+            int total = (int)Math.Round(avg);
 
             // calling the method or the result according to the average avg
-            switch (avg)
+            switch (total)
             {
                 case 1:
                     Console.WriteLine("Strongly Disagree");
@@ -169,7 +170,7 @@ namespace ITEC102Finals_SurveyConsoleApp
             TextFile txtFile = new TextFile();
 
             // calling the method in TextFile Class to write the result
-            txtFile.WritingResults(avg);
+            txtFile.WritingResults(total);
         }
 
         // to show less statistics in the console
