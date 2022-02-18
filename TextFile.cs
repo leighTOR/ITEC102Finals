@@ -13,6 +13,7 @@ namespace ITEC102Finals_SurveyConsoleApp
         {
             // getting the average of all the answers
             double avg = Queryable.Average(answers.AsQueryable());
+            int total = (int)Math.Round(avg);
 
             // writing students' information and their answers in a text file
             // i used append method in all the files to get all the updated information by the users
@@ -70,7 +71,7 @@ namespace ITEC102Finals_SurveyConsoleApp
 
                 // writing the result or the average of the surveyees' answers
                 sw.Write("\nResult : ");
-                switch (avg)
+                switch (total)
                 {
                     case 1:
                         sw.WriteLine("Strongly Disagree");
