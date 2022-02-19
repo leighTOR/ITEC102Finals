@@ -47,6 +47,7 @@ namespace ITEC102Finals_SurveyConsoleApp
                 MatchCollection _twenty = Regex.Matches(contentsAge, @"(?i)\b20\b");
                 twenty = (int)Math.Round((double)(100 * _twenty.Count) / arrayAge.Length);
                 Console.WriteLine($"20: {twenty}%");
+                readAge.Close();
             }
         }
 
@@ -65,6 +66,7 @@ namespace ITEC102Finals_SurveyConsoleApp
                 MatchCollection _male = Regex.Matches(contentsSex, @"(?i)\bMALE\b");
                 male = (int)Math.Round((double)(100 * _male.Count) / arraySex.Length);
                 Console.WriteLine($"Male  : {male}%");
+                readSex.Close();
             }
         }
 
@@ -87,6 +89,7 @@ namespace ITEC102Finals_SurveyConsoleApp
                 MatchCollection _bsit = Regex.Matches(contentsCourse, @"(?i)\bBSIT\b");
                 bsit = (int)Math.Round((double)(100 * _bsit.Count) / arrayCourse.Length);
                 Console.WriteLine($"BSIT: {bsit}%");
+                readCourse.Close();
             }
         }
 
@@ -117,6 +120,7 @@ namespace ITEC102Finals_SurveyConsoleApp
                 MatchCollection _stronglyDisagree = Regex.Matches(contentResults, @"(?i)\b1\b");
                 stronglyDisagree = (int)Math.Round((double)(100 * _stronglyDisagree.Count) / arrayResults.Length);
                 Console.WriteLine($"Strongly Disagree: {stronglyDisagree}%");
+                readResults.Close();
             }
         }
 
@@ -147,6 +151,7 @@ namespace ITEC102Finals_SurveyConsoleApp
                 ss.WriteLine($"Neutral          : {neutral}%");
                 ss.WriteLine($"Disagree         : { disagree}%");
                 ss.WriteLine($"Strongly Disagree: {stronglyDisagree}%");
+                ss.Close();
             }
         }
     }
