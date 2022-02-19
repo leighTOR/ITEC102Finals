@@ -25,10 +25,10 @@
                 while (i >= 0) // to loop until there's nothing to do or hits the break
                 {
                     // menu that will be displayed to the user
-                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Green; // this part makes the text color green
                     Console.WriteLine("==MENU==");
                     Console.WriteLine("[A]NSWER SURVEY\n[S]HOW CURRENT STATISTICS\n[E]XIT");
-                    Console.ResetColor();
+                    Console.ResetColor(); // this takes the text color back to white
                     Console.Write("Enter your choice: ");
                     char c = Convert.ToChar(Console.ReadLine().ToUpper());
                     Console.WriteLine();
