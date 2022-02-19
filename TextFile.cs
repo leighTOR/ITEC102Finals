@@ -104,6 +104,7 @@ namespace ITEC102Finals_SurveyConsoleApp
             using (StreamWriter sr = File.AppendText(@"D:\ITEC102Finals\survey - results.txt"))
             {
                 sr.WriteLine(avg);
+                sr.Close();
             }
         }
 
