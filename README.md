@@ -1,5 +1,5 @@
-# ITEC102Finals
-a simple survey using c# console application. this is for my computer science freshman year, first semesters' finals requirement.
+# ITEC 102 Finals
+A simple survey using C# console application. This is for my computer science freshman year, first semesters' finals requirement.
 
 
 ## Inputting the surveyees' information and answering the questions:
@@ -45,4 +45,4 @@ just like this:
 
 
 
-### i will still continue to improve this code until i'm satisfied with it.
+### I will still continue to improve this code until I'm satisfied with it. Hope you can also contribute.
